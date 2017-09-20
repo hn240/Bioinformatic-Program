@@ -1,0 +1,31 @@
+#Calculating GC percentage
+gene = open("BRCA1_1.txt", "r")
+
+g=0;
+c=0;
+a=0;
+t=0;
+
+gene.readline()
+
+for line in gene:
+    line = line.l
+    for letter in line:
+        if letter == "g":
+            g+=1
+        if letter == "c":
+            c+=1
+        if letter == "a":
+            a+=1
+        if letter == "t":
+            t+=1
+            
+print "number of g's " + str(g)
+print "number of c's " + str(c)
+print "number of a's " + str(a)
+print "number of t's " + str(t)
+
+gc = float(g+c) / float(g+c+a+t)
+print "gc percentage is " + str(gc*100) "%"
+
+            
