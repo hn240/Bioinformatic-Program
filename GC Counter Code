@@ -20,10 +20,10 @@ for line in gene:
         if letter == "t":
             t+=1
             
-print "number of g's " + str(g)
-print "number of c's " + str(c)
-print "number of a's " + str(a)
-print "number of t's " + str(t)
+print "Number of g's: " + str(g)
+print "Number of c's: " + str(c)
+print "Number of a's: " + str(a)
+print "Number of t's: " + str(t)
 
 gc = float(g+c) / float(g+c+a+t)
 print "gc percentage is " + str(gc*100) "%"
